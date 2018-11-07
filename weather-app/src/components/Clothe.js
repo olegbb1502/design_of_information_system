@@ -1,13 +1,18 @@
 import React from 'react';
 
-class Clothe extends React.Component {
+class Clothe extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+
     render(){
-        return(
-            <div>
-                <h1>These is Clothe component</h1>
-            </div>
-        );
+        if(this.props.temperature >= 5){
+            return <h1>JARKO BLEAT PATAMUSHA {this.props.temperature} GRADUSAV!!!</h1>
+        }
+        else{
+            return null
+        }
     }
 }
-
 export default Clothe;

@@ -3,6 +3,7 @@ import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import Clothe from './components/Clothe';
+import './App.css';
 
 const API_KEY = "51fbf3d932973e8a177c849e922b87ab";
 
@@ -57,7 +58,9 @@ class App extends React.Component {
             humidity={this.state.humidity}
             error={this.state.error}
           />
-          <Clothe />
+          <Clothe
+              temperature={this.state.temperature}
+          />
         </div>
     );
   }
