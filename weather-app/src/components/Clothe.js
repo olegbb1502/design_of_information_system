@@ -10,6 +10,9 @@ class Clothe extends React.Component{
         if(this.props.temperature >= 5){
             return <h1>JARKO BLEAT PATAMUSHA {this.props.temperature} GRADUSAV!!!</h1>
         }
+        if(this.props.temperature < 5){
+            return <h1>HOLODNO</h1>
+        }
         else{
             return null
         }

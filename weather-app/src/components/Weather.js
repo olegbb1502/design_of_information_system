@@ -4,9 +4,8 @@ import './Weather.css';
 const Weather = props => {
     return(
         <div className="weather">
-            {props.city && props.country && <p>Location: { props.city }, { props.country }</p>}
-            {props.temperature && <p>Temperature: { props.temperature }&#8451;</p>}
-            {props.humidity && <p>Humidity: { props.humidity }%</p>}
+            {props.temperature && <h1>{ props.temperature }&#8451;</h1>}
+            {props.description && <h1>{props.description}</h1> }
             {props.error && <h1 className="error-message">{ props.error }</h1>}
         </div>
     );
